@@ -6,10 +6,10 @@ export const Footer = () => {
     <footer>
             <div className="footer-container">
                 <div className="footer-info">
-                    <h3>Tittle</h3>
-                    <p>Dirección: Text</p>
-                    <p>Teléfono: Text</p>
-                    <p>Email: Text</p>
+                    <h3>Ideas</h3>
+                    <p>Slides: Text</p>
+                    <p>Ads: Text</p>
+                    <p>API wowhead: Text</p>
                 </div>
                 <div className="footer-links">
                     <h3>Tittle 2</h3>
