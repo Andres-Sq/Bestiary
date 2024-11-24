@@ -5,7 +5,7 @@ import '../assets/styles/Header.css';
 
 export const Header = () => {
 
-    const menuItems = ['Index', 'Abilities', 'Pet by Id', 'Ability by Id'];
+    const menuItems = ['Home', ' Pet Index', 'Pet Abilities', 'Pet by Id', 'Ability by Id'];
 
   return (
     <header>
