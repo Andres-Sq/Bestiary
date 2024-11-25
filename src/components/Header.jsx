@@ -1,27 +1,36 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom'; // Importamos Link de react-router-dom
 import logo from '../assets/images/logo.svg';
 import '../assets/styles/Header.css';
 
-
 export const Header = () => {
 
-    const menuItems = ['Home', ' Pet Index', 'Pet Abilities', 'Pet by Id', 'Ability by Id'];
+  const menuItems = [
+    { name: 'Home', path: '/' },
+    { name: 'Index', path: '/index' },
+    { name: 'Pet Abilities', path: '/pet-abilities' },
+    { name: 'Pet by Id', path: '/pet-by-id' },
+    { name: 'Ability by Id', path: '/ability-by-id' }
+  ];
 
   return (
     <header>
-            <div class="header-middle">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 id="titulo_pagina"> Hunter Bestiary </h1>
-            </div>
-        <nav aria-label="Main navigation">
+      <div className="header-middle">
+        <img src={logo} className="App-logo" alt="logo" />
+        <h1 id="titulo_pagina"> Hunter Bestiary </h1>
+      </div>
+      <nav aria-label="Main navigation">
         <ul>
           {menuItems.map((item, index) => (
             <li key={index}>
-              <a href={`#${item.toLowerCase().replace(/\s+/g, '-')}`}>{item}</a>
+              {/* Usamos Link de react-router-dom para navegación */}
+              <Link to={item.path}>
+                {item.name}
+              </Link>
             </li>
           ))}
         </ul>
       </nav>
     </header>
-  )
-}
+  );
+};
