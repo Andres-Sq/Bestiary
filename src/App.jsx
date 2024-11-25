@@ -9,10 +9,14 @@ function App() {
   return (
     <Router>
       <Header />  {/* Componente de navegación */}
+      
       <Routes>
-        <Route path="/" element={<Body/>} />  {/* Página principal (Home) */}
+        <Route path="/" element={<Body />} />  {/* Página principal (Home) */}
         <Route path="/index" element={<Index />} />  {/* Ruta para Pet Index */}
-        </Routes>
+        <Route path="/pet-abilities" component={'PetAbilities'} />  {/* Ruta para Pet Abilities */}
+        <Route path="/pet-by-id" component={'PetById'} />  {/* Ruta para Pet by Id */}
+        <Route path="/ability-by-id" component={'AbilityById'} />  {/* Ruta para Ability by Id */}
+      </Routes>
       <Footer />  {/* Componente Footer */}
     </Router>
   );
