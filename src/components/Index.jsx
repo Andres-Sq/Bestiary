@@ -96,6 +96,9 @@ export const Index = () => {
           placeholder="Search for a pet..."
           className="search-box"
         />
+        <div>
+          
+        </div>
         <ul className="pet-list">
           {currentItems.length > 0 ? (
             currentItems.map((pet) => (
@@ -105,7 +108,9 @@ export const Index = () => {
                   alt={pet.name}
                   className="pet-image"
                 />
-                <p>{pet.name}</p>
+                <pre>
+                  {pet.name + '\nId: ' + pet.id}
+                </pre>
               </li>
             ))
           ) : (

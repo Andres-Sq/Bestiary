@@ -8,9 +8,7 @@ export const Header = () => {
   const menuItems = [
     { name: 'Home', path: '/' },
     { name: 'Index', path: '/index' },
-    { name: 'Pet Abilities', path: '/pet-abilities' },
-    { name: 'Pet by Id', path: '/pet-by-id' },
-    { name: 'Ability by Id', path: '/ability-by-id' }
+    { name: 'Pet Abilities', path: '/PetAbilities' }
   ];
 
   return (
@@ -23,7 +21,7 @@ export const Header = () => {
         <ul>
           {menuItems.map((item, index) => (
             <li key={index}>
-              {/* Usamos Link de react-router-dom para navegación */}
+              {/* Link react-router-dom to nav */}
               <Link to={item.path}>
                 {item.name}
               </Link>
