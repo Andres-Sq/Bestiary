@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Index } from './components/Index';
-import { Body } from './components/Body';
+import { Home } from './components/Home';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Header />  {/* Componente de navegación */}
       
       <Routes>
-        <Route path="/" element={<Body />} />  {/* Página principal (Home) */}
+        <Route path="/" element={<Home />} />  {/* Página principal (Home) */}
         <Route path="/index" element={<Index />} />  {/* Ruta para Pet Index */}
         <Route path="/pet-abilities" component={'PetAbilities'} />  {/* Ruta para Pet Abilities */}
         <Route path="/pet-by-id" component={'PetById'} />  {/* Ruta para Pet by Id */}

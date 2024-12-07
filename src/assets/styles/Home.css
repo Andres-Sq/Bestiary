@@ -1,0 +1,25 @@
+.scroll-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #8b4513;
+    background: #f5deb3;
+    padding: 20px;
+    font-family: 'Georgia', serif;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+    position: relative;
+}
+
+.scroll-content {
+    height: 600px;
+    font-size: 18px;
+    color: #3e2a47;
+    line-height: 1.6;
+}
+/*CSS-img-no-responsive*/
+img {
+    transform: translate(100%, -10%);
+    height: 30%;
+  }  

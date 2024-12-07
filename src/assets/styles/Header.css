@@ -14,6 +14,7 @@
   .App-logo {
     background-color: #303b50;
     height: 7vmin;
+    width: 7vmin;
     pointer-events: none;
     margin-right: 1vmin;
   }
