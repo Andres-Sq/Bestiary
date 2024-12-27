@@ -34,7 +34,7 @@ export const Index = () => {
   useEffect(() => {
     const fetchPets = async () => {
       const URL = `https://us.api.blizzard.com/data/wow/pet/index?namespace=static-us&locale=en_US&page=${currentPage}&per_page=${itemsPerPage}`;
-      const headers = { Authorization: 'Bearer USdiAkzj14zILW6Bryi0NLofWm3iGeIw5O' };
+      const headers = { Authorization: 'Bearer USt4JwpWCoH1YO0paodPe5Ad3RlehYLmlm' };
 
       try {
         const response = await fetch(URL, { headers });
@@ -61,9 +61,7 @@ export const Index = () => {
   // Fetch image for a specific pet
   const fetchPetImage = async (petId) => {
     const URL = `https://us.api.blizzard.com/data/wow/media/pet/${petId}?namespace=static-us&locale=en_US`;
-    const headers = {
-      Authorization: 'Bearer USdiAkzj14zILW6Bryi0NLofWm3iGeIw5O',
-    };
+    const headers = { Authorization: 'Bearer USt4JwpWCoH1YO0paodPe5Ad3RlehYLmlm' };
 
     try {
       const response = await fetch(URL, { headers });
