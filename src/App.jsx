@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Index } from './components/Index';
@@ -8,7 +8,7 @@ import { PetAbilities } from './components/PetAbilities';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Header /> 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -16,7 +16,7 @@ function App() {
         <Route path="/PetAbilities" element={<PetAbilities />} />
       </Routes>
       <Footer />
-    </Router>
+    </BrowserRouter>
   );
 }
 
